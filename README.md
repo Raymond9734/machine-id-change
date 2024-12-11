@@ -4,6 +4,7 @@
 ## Overview
 
 This Bash script allows users to modify the device ID for the Cursor editor. It's particularly useful when device IDs become locked due to frequent account switching or when you need to reset your device identification.
+it contains macOs script and linux script
 
 ## Features
 
@@ -24,7 +25,7 @@ This Bash script allows users to modify the device ID for the Cursor editor. It'
 
 1. Download the script:
    ```bash
-   wget https://raw.githubusercontent.com/your-repo/cursor-id-changer/main/change_cursor_id.sh
+   wget https://github.com/Raymond9734/machine-id-change/blob/main/linux_change.sh
    ```
 
 2. Make the script executable:

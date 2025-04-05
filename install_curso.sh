@@ -38,7 +38,7 @@ chmod +x "$APPIMAGE_TARGET"
 echo "🖼 Extracting icon..."
 TEMP_DIR=$(mktemp -d)
 "$APPIMAGE_TARGET" --appimage-extract > /dev/null 2>&1 || echo "⚠️ Skipping icon extraction"
-ICON_CANDIDATE=$(find "$TEMP_DIR" -type f \( -iname "*.png" -o -iname "*.svg" \) | grep -i "cursor" | head -n 1)
+ICON_CANDIDATE=$(find "$TEMP_DIR" -type f \( -iname "*.png" -o -iname "*.svg" \) | grep -Ei "cursor|code" | head -n 1)
 
 if [[ -f "$ICON_CANDIDATE" ]]; then
   cp "$ICON_CANDIDATE" "$ICON_PATH"
